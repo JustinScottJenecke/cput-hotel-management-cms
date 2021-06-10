@@ -7,3 +7,10 @@ Basic hotel management system, deveoped using TDD and DDD, with Java, Spring-Boo
     - Added plugin for maven complier
     - created package for staff members
     - created abstract class 'Staff' with no methods
+    
+# 2nd Commit - JustinJenecke-215163052 
+
+    - created Manager Entity using Builder Pattern
+    - added maven dependancy for JUnit 5
+    - created Factory class for creating Manager entities
+    - created test cases to test successful creation of Manager entities
