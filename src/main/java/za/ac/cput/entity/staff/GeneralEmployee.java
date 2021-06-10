@@ -87,13 +87,13 @@ public class GeneralEmployee extends Staff {
             return new GeneralEmployee(this);
         }
 
-        private Builder copy (GeneralEmployee generalemployee){
-            this.staffId = generalemployee.staffId;
-            this.firstName = generalemployee.firstName;
-            this.lastName = generalemployee.lastName;
-            this.shift = generalemployee.shift;
-            this.hoursWorked = generalemployee.hoursWorked;
-            this.genEmpJob = generalemployee.genEmpJob;
+        private Builder copy (GeneralEmployee generalEmployee){
+            this.staffId = generalEmployee.staffId;
+            this.firstName = generalEmployee.firstName;
+            this.lastName = generalEmployee.lastName;
+            this.shift = generalEmployee.shift;
+            this.hoursWorked = generalEmployee.hoursWorked;
+            this.genEmpJob = generalEmployee.genEmpJob;
 
             return this;
 
