@@ -15,6 +15,7 @@ Basic hotel management system, deveoped using TDD and DDD, with Java, Spring-Boo
     - created Factory class for creating Manager entities
     - created test cases to test successful creation of Manager entities
 
+
 # 3rd Commit - JustinJenecke-215163052 - 11/06/2021
 
 	- removed placeholder txt files that kept project structure, since team members forked
@@ -24,4 +25,11 @@ Basic hotel management system, deveoped using TDD and DDD, with Java, Spring-Boo
 	- created remaining test cases and classes for staff entity factories
 	- all tests ran successfully and objects of entities were created as desired
 
-    
+
+# First Commit - GaynorJantjies-213069555
+
+    - created DiningRoom and DiningTable Entity using Builder Pattern
+    - added maven dependancy for JUnit 5
+    - created Factory class for creating DiningRoom and DiningTable entities
+    - created test cases to test successful creation of DiningRoom and DiningTable entities
+
