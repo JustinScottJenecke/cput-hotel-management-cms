@@ -23,6 +23,26 @@ public class Booking {
         this.checkOut = builder.checkOut;
     }
 
+    public String getBookingId() {
+        return bookingId;
+    }
+
+    public int getIdNo() {
+        return idNo;
+    }
+
+    public String getRoomNo() {
+        return roomNo;
+    }
+
+    public LocalDate getCheckIn() {
+        return checkIn;
+    }
+
+    public LocalDate getCheckOut() {
+        return checkOut;
+    }
+
     @Override
     public String toString() {
         return "Booking{" +

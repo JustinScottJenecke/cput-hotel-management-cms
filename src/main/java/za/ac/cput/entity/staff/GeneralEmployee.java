@@ -26,6 +26,30 @@ public class GeneralEmployee extends Staff {
         this.genEmpJob = builder.genEmpJob;
     }
 
+    public String getStaffId() {
+        return staffId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getShift() {
+        return shift;
+    }
+
+    public int getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public String getGenEmpJob() {
+        return genEmpJob;
+    }
+
     @Override
     public String toString() {
         return "GeneralEmployee{" +
