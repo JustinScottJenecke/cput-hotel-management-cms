@@ -1,27 +1,26 @@
 package za.ac.cput.factory.staff;
 
 /*
-    ManagerFactory.java
-    Factory for the Manager
+    FrontDeskStaffFactory.java
+    Factory for the FrontDeskStaff
     Author: Justin Scott Jenecke 215163052
-    Date: 10 June 2021
+    Date: 11 June 2021
 */
 
-import za.ac.cput.entity.staff.Manager;
+import za.ac.cput.entity.staff.FrontDeskStaff;
 
-public class ManagerFactory {
+public class FrontDeskStaffFactory{
 
-    public static Manager createManager(
+    public static FrontDeskStaff createFrontDeskStaff(
             String staffId,
             String firstName,
             String lastName,
             int shift,
             int hoursWorked,
             String userName,
-            String password,
-            String role){
+            String password){
 
-        Manager manager = new Manager.Builder()
+        FrontDeskStaff frontDeskStaff = new FrontDeskStaff.Builder()
                 .setStaffId(staffId)
                 .setFirstName(firstName)
                 .setLastName(lastName)
@@ -29,10 +28,9 @@ public class ManagerFactory {
                 .setHoursWorked(hoursWorked)
                 .setUserName(userName)
                 .setPassword(password)
-                .setRole(role)
                 .build();
 
-        return manager;
-    }
+        return frontDeskStaff;
 
+    }
 }
