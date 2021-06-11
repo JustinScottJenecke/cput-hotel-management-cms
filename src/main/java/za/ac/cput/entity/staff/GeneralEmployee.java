@@ -84,6 +84,7 @@ public class GeneralEmployee extends Staff {
         }
 
         public GeneralEmployee build(){
+
             return new GeneralEmployee(this);
         }
 

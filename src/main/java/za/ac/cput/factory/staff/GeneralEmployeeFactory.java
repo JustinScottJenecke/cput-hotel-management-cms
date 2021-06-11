@@ -1,3 +1,10 @@
+/**
+ * GeneralEmployeeFactory.java
+ * Factory for GeneralEmployee
+ * Author: Kevin Michael Karelse (219000859)
+ * Date:11/06/2021
+ */
+
 package za.ac.cput.factory.staff;
 
 import za.ac.cput.entity.staff.GeneralEmployee;
