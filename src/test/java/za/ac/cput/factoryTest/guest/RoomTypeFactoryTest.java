@@ -1,4 +1,4 @@
-package za.ac.cput.factory.guest;
+package za.ac.cput.factoryTest.guest;
 /* RoomTypeFactoryTest.java
    Test for the RoomTypeFactoryFactoryTest
    Author: Themba Khanyile (217238173)
@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import  za.ac.cput.entity.guest.RoomType;
+import za.ac.cput.factory.guest.RoomTypeFactory;
 
 class RoomTypeFactoryTest
 {

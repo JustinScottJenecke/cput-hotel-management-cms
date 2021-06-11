@@ -1,4 +1,4 @@
-package za.ac.cput.factory.guest;
+package za.ac.cput.factoryTest.guest;
 /* GuestFactoryTest.java
    Test for the GuestFactoryTest
    Author: Themba Khanyile (217238173)
@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import  za.ac.cput.entity.guest.Guest;
+import za.ac.cput.factory.guest.GuestFactory;
 
 
 class GuestFactoryTest{
