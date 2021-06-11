@@ -1,6 +1,6 @@
 package za.ac.cput.entity.staff;
 
-public class FrontDeskStaff extends Staff {
+public class FrontDeskStaff {
 
     private String staffId;
     private String firstName;
@@ -14,15 +14,16 @@ public class FrontDeskStaff extends Staff {
     protected FrontDeskStaff(){
     }
 
-    public FrontDeskStaff(String staffId, String firstName, String lastName, int shift, int hoursWorked,  String userName, String password) {
-        this.staffId = staffId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.shift = shift;
-        this.hoursWorked = hoursWorked;
+    public FrontDeskStaff(Builder builder) {
 
-        this.userName = userName;
-        this.password = password;
+        this.staffId = builder.staffId;
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.shift = builder.shift;
+        this.hoursWorked = builder.hoursWorked;
+
+        this.userName = builder.userName;
+        this.password = builder.password;
     }
 
     public String getStaffId() {
@@ -63,6 +64,74 @@ public class FrontDeskStaff extends Staff {
                 ", hoursWorked=" + hoursWorked +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                "} " + super.toString();
+                "} ";
+    }
+
+    public static class Builder {
+
+        private String staffId;
+        private String firstName;
+        private String lastName;
+        private int shift;
+        private int hoursWorked;
+
+        private String userName;
+        private String password;
+
+        public Builder setStaffId(String staffId) {
+            this.staffId = staffId;
+            return this;
+        }
+
+        public Builder setFirstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public Builder setLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public Builder setShift(int shift) {
+            this.shift = shift;
+            return this;
+        }
+
+        public Builder setHoursWorked(int hoursWorked) {
+            this.hoursWorked = hoursWorked;
+            return this;
+        }
+
+        public Builder setUserName(String userName) {
+            this.userName = userName;
+            return this;
+        }
+
+        public Builder setPassword(String password) {
+            this.password = password;
+            return this;
+
+        }
+
+
+        public Builder copy(FrontDeskStaff s){
+
+            this.staffId = s.staffId;
+            this.firstName = s.firstName;
+            this.lastName = s.lastName;
+            this.shift = s.shift;
+
+            this.hoursWorked = s.hoursWorked;
+
+            this.userName = s.userName;
+            this.password = s.password;
+
+            return this;
+        }
+
+        public FrontDeskStaff build() {
+            return new FrontDeskStaff(this);
+        }
     }
 }

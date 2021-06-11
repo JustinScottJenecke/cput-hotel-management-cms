@@ -21,8 +21,12 @@ class ManagerFactoryTest {
                 "pass1",
                 "GM");
 
-        assertEquals("m101", manager.getStaffId());
+        assertEquals("m101", manager.getStaffId());;
+        assertEquals("Adam",manager.getFirstName());
+        assertEquals("Smith",manager.getLastName());
         assertEquals(140, manager.getShift());
+        assertEquals(21, manager.getHoursWorked());
+        assertEquals("manOne1",manager.getUserName());
         assertEquals("pass1", manager.getPassword());
         assertEquals("GM", manager.getRole());
 
