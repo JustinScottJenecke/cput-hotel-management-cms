@@ -1,5 +1,12 @@
 package za.ac.cput.factory.staff;
 
+/*
+    FrontDeskStaffFactory.java
+    Factory for the FrontDeskStaff
+    Author: Justin Scott Jenecke 215163052
+    Date: 11 June 2021
+*/
+
 import za.ac.cput.entity.staff.FrontDeskStaff;
 
 public class FrontDeskStaffFactory{

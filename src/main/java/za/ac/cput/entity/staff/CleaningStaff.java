@@ -1,5 +1,12 @@
 package za.ac.cput.entity.staff;
 
+/*
+    CleaningStaff.java
+    Entity for the CleaningStaff
+    Author: Justin Scott Jenecke 215163052
+    Date: 10 June 2021
+*/
+
 public class CleaningStaff {
 
     private String staffId;

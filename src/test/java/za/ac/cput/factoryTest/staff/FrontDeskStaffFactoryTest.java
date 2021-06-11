@@ -6,6 +6,13 @@ import za.ac.cput.factory.staff.FrontDeskStaffFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+    FrontDeskStaffFactoryTest.java
+    Test cases for the FrontDeskStaffFactory
+    Author: Justin Scott Jenecke 215163052
+    Date: 11 June 2021
+*/
+
 public class FrontDeskStaffFactoryTest {
 
     @Test

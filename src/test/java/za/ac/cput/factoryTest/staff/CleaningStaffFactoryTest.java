@@ -1,5 +1,12 @@
 package za.ac.cput.factoryTest.staff;
 
+/*
+    CleaningStaffFactoryTest.java
+    Test cases for the CleaningStaffFactory
+    Author: Justin Scott Jenecke 215163052
+    Date: 11 June 2021
+*/
+
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.staff.CleaningStaff;
 import za.ac.cput.factory.staff.CleaningStaffFactory;

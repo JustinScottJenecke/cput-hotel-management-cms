@@ -1,5 +1,13 @@
 package za.ac.cput.entity.staff;
 
+/*
+    KitchenStaff.java
+    Entity for the KitchenStaff
+    Author: Justin Scott Jenecke 215163052
+    Date: 10 June 2021
+*/
+
+
 public class KitchenStaff {
 
     private String staffId;

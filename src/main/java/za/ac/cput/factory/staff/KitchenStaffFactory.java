@@ -1,5 +1,12 @@
 package za.ac.cput.factory.staff;
 
+/*
+    KitchenStaffFactory.java
+    Factory for the KitchenStaff
+    Author: Justin Scott Jenecke 215163052
+    Date: 11 June 2021
+*/
+
 import za.ac.cput.entity.staff.KitchenStaff;
 
 public class KitchenStaffFactory {

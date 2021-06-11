@@ -1,5 +1,12 @@
 package za.ac.cput.factory.staff;
 
+/*
+    ManagerFactory.java
+    Factory for the Manager
+    Author: Justin Scott Jenecke 215163052
+    Date: 10 June 2021
+*/
+
 import za.ac.cput.entity.staff.Manager;
 
 public class ManagerFactory {

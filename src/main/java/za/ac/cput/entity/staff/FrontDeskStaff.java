@@ -1,5 +1,13 @@
 package za.ac.cput.entity.staff;
 
+/*
+    FrontDeskStaff.java
+    Entity for the FrontDeskStaff
+    Author: Justin Scott Jenecke 215163052
+    Date: 10 June 2021
+*/
+
+
 public class FrontDeskStaff {
 
     private String staffId;

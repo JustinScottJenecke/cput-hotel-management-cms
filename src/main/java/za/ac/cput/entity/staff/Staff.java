@@ -1,5 +1,13 @@
 package za.ac.cput.entity.staff;
 
+/*
+    Staff.java
+    Abstract class for the Staff
+    Author: Justin Scott Jenecke 215163052
+    Date: 10 June 2021
+*/
+
+
 public abstract class Staff {
 
     private String staffId;

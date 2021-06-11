@@ -1,5 +1,12 @@
 package za.ac.cput.entity.staff;
 
+/*
+    Manager.java
+    Entity for the Manager
+    Author: Justin Scott Jenecke 215163052
+    Date: 10 June 2021
+*/
+
 public class Manager {
 
     private String staffId;

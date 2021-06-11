@@ -6,6 +6,12 @@ import za.ac.cput.factory.staff.KitchenStaffFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+    KitchenStaffFactoryTest.java
+    Test cases for the KitchenStaffFactory
+    Author: Justin Scott Jenecke 215163052
+    Date: 11 June 2021
+*/
 
 public class KitchenStaffFactoryTest {
 

@@ -1,5 +1,13 @@
 package za.ac.cput.factory.staff;
 
+/*
+    CleaningStaffFactory.java
+    Factory for the CleaningStaff
+    Author: Justin Scott Jenecke 215163052
+    Date: 11 June 2021
+*/
+
+
 import za.ac.cput.entity.staff.CleaningStaff;
 
 public class CleaningStaffFactory {
