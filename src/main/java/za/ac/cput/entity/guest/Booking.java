@@ -23,6 +23,7 @@ public class Booking {
         this.checkOut = builder.checkOut;
     }
 
+
     public String getBookingId() {
         return bookingId;
     }

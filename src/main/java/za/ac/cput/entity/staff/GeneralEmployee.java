@@ -26,6 +26,7 @@ public class GeneralEmployee extends Staff {
         this.genEmpJob = builder.genEmpJob;
     }
 
+
     public String getStaffId() {
         return staffId;
     }
