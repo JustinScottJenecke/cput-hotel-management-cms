@@ -1,38 +1,35 @@
 package za.ac.cput.factory.staff;
 
 /*
-    ManagerFactory.java
-    Factory for the Manager
+    CleaningStaffFactory.java
+    Factory for the CleaningStaff
     Author: Justin Scott Jenecke 215163052
-    Date: 10 June 2021
+    Date: 11 June 2021
 */
 
-import za.ac.cput.entity.staff.Manager;
 
-public class ManagerFactory {
+import za.ac.cput.entity.staff.CleaningStaff;
 
-    public static Manager createManager(
+public class CleaningStaffFactory {
+
+    public static CleaningStaff createCleaningStaffMember(
             String staffId,
             String firstName,
             String lastName,
             int shift,
             int hoursWorked,
-            String userName,
-            String password,
-            String role){
+            int floor){
 
-        Manager manager = new Manager.Builder()
+        CleaningStaff cleaningStaff = new CleaningStaff.Builder()
                 .setStaffId(staffId)
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setShift(shift)
                 .setHoursWorked(hoursWorked)
-                .setUserName(userName)
-                .setPassword(password)
-                .setRole(role)
+                .setFloor(floor)
                 .build();
 
-        return manager;
+        return cleaningStaff;
     }
 
 }

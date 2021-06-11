@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 .idea
 #files to ingnore
+=======
+/.idea/
+*.iml
+/target/
+>>>>>>> 2ccdc5c97d4f0cebbe2e4c5682c48ee5e6570fc4
