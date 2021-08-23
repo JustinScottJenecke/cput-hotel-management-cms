@@ -1,4 +1,7 @@
 package za.ac.cput.factory.dining;
+
+import za.ac.cput.entity.dining.DiningRoom;
+
 /**
  * 	DiningRoom Factory.java
  *	DiningRoom Factory
@@ -10,25 +13,20 @@ package za.ac.cput.factory.dining;
 
 public class DiningRoomFactory {
 
-
-	public static DiningRoom createDiningRoom{
-
-		 String diningRoomId;
-     	 String serviceType;
-    	 int tableId;
-     	 int capacity;
+	public static DiningRoom createDiningRoom(
+		 String diningRoomId,
+     	 String serviceType,
+    	 int tableId,
+     	 int capacity) {
 
 		DiningRoom diningRoom = new DiningRoom.Builder()
-
-			.setDiningRoomId(diningRoomId)
-			.setServiceType(serviceType)
-			.setTableId(tableId)
-			.setCapacity(capacity)
-			.build();
+				.setDiningRoomId(diningRoomId)
+				.setServiceType(serviceType)
+				.setTableId(tableId)
+				.setCapacity(capacity)
+				.build();
 
 		return diningRoom;
 	}
-
-
 
 }

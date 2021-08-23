@@ -19,7 +19,7 @@ public class DiningRoom {
 
     	public DiningRoom(Builder builder){
 
-    		this.dinigRoomId = builder.diningRoomId;
+    		this.diningRoomId = builder.diningRoomId;
     		this.serviceType = builder.serviceType;
     		this.tableId = builder.tableId;
     		this.capacity = builder.capacity;

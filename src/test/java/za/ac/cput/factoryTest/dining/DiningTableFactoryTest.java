@@ -22,16 +22,11 @@ public class DiningTableFactoryTest {
 
 
 		DiningTable diningTable = DiningTableFactory.createDiningTable(
-
-
 			9,
-			15,
-			2,
-			"VIP",
-			"Club Member");
+			"VIP");
 
 			assertEquals(2, diningTable.getTableNum());
-			assertEquals("VIP", diningRoom.getPatronType());
+			assertEquals("VIP", diningTable.getPatronType());
 
 	}
 

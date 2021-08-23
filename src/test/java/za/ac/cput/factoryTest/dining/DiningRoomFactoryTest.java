@@ -23,14 +23,9 @@ public class DiningRoomFactoryTest {
 		DiningRoom diningRoom = DiningRoomFactory.createDiningRoom(
 
 			"DH",//Dining Hall
-			"PL",//Pool Lounge
-			"Catering Event",
 			"Lunch",
 			15,
-			10,
-			1,
-			20,
-			7);
+			20);
 
 			assertEquals("DH", diningRoom.getDiningRoomId());
 			assertEquals("Lunch", diningRoom.getServiceType());

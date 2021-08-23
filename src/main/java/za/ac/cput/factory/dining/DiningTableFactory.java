@@ -1,4 +1,8 @@
 package za.ac.cput.factory.dining;
+
+import za.ac.cput.entity.dining.DiningRoom;
+import za.ac.cput.entity.dining.DiningTable;
+
 /**
  * 	DiningTable Factory.java
  *	DiningTable Factory
@@ -11,12 +15,10 @@ package za.ac.cput.factory.dining;
 public class DiningTableFactory {
 
 
-	public static DiningTable createDiningTable{
+	public static DiningTable createDiningTable(int tableNum,
+		String patronType) {
 
-		int tableNum;
-		String patronType;
-
-		DiningRoom diningTable = new DiningTable.Builder()
+		DiningTable diningTable = new DiningTable.Builder()
 
 			.setTableNum(tableNum)
 			.setPatronType(patronType)
