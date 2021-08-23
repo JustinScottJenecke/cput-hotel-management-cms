@@ -1,7 +1,8 @@
-package za.ac.cput.factory.guest;
+package za.ac.cput.factoryTest.guest;
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.guest.Room;
+import za.ac.cput.factory.guest.RoomFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
