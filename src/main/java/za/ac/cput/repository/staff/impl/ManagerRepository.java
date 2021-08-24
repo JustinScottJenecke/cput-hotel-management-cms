@@ -26,13 +26,19 @@ public class ManagerRepository implements IManagerRepository {
 
     @Override
     public Manager create(Manager x) {
-        try {
+        boolean created = managerDb.add(x);
+        if (created)
+            return x;
+        else
+            return null;
+        /*    try {
             managerDb.add(x);
         } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        return x;
+            e.printStackTrace();
+            return null;
+        }
+        */
     }
 
     @Override
@@ -45,7 +51,7 @@ public class ManagerRepository implements IManagerRepository {
     }
 
     @Override
-    public Manager update(Manager x, String s) {
+    public Manager update(Manager x) {
         Manager oldManager = read(x.getStaffId());
         if (oldManager != null){
             managerDb.remove(oldManager);
@@ -57,13 +63,13 @@ public class ManagerRepository implements IManagerRepository {
 
     @Override
     public boolean delete(String s) {
-        try {
-            Manager delManager = read(s);
-            if (delManager != null)
-                managerDb.remove(delManager);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-        return false;
+
+        Manager delManager = read(s);
+        if (delManager == null)
+            return false;
+        managerDb.remove(delManager);
+        return true;
+
+
     }
 }
