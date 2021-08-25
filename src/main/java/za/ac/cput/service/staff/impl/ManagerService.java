@@ -1,5 +1,12 @@
 package za.ac.cput.service.staff.impl;
 
+/**
+ *     ManagerService.java
+ *     Manager Service to provide access to datastore and repository
+ *     Author: Justin Scott Jenecke 215163052
+ *     Date: 25 August 2021
+ **/
+
 import za.ac.cput.entity.staff.Manager;
 import za.ac.cput.repository.staff.impl.ManagerRepository;
 import za.ac.cput.service.staff.IMangerService;

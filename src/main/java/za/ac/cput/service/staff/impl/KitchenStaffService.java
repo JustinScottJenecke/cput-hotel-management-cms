@@ -1,5 +1,12 @@
 package za.ac.cput.service.staff.impl;
 
+/**
+ *     KitchenStaffService.java
+ *     Kitchen Staff Service to provide access to datastore and repository
+ *     Author: Justin Scott Jenecke 215163052
+ *     Date: 25 August 2021
+ **/
+
 import za.ac.cput.entity.staff.KitchenStaff;
 import za.ac.cput.repository.staff.impl.KitchenStaffRepository;
 import za.ac.cput.service.staff.IKitchenStaffService;

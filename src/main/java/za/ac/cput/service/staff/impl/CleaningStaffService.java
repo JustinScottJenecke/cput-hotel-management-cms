@@ -1,8 +1,16 @@
 package za.ac.cput.service.staff.impl;
 
+/**
+ *     CleaningStaffService.java
+ *     Cleaning Staff Service to provide access to datastore and repository
+ *     Author: Justin Scott Jenecke 215163052
+ *     Date: 25 August 2021
+ **/
+
 import za.ac.cput.entity.staff.CleaningStaff;
 import za.ac.cput.repository.staff.impl.CleaningStaffRepository;
 import za.ac.cput.service.staff.ICleaningStaffService;
+
 
 public class CleaningStaffService implements ICleaningStaffService {
 
