@@ -1,5 +1,12 @@
 package za.ac.cput.repositoryTest.staff;
 
+/**
+ *     KitchenStaffRepositoryTest.java
+ *     Test implementation class for KitchenStaff Repository
+ *     Author: Justin Scott Jenecke 215163052
+ *     Date: 25 August 2021
+ **/
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
@@ -35,7 +42,6 @@ public class KitchenStaffRepositoryTest {
         KitchenStaff readMan = kitchenStaffRepository.read("k185");
         assertEquals(kitchenStaff.getFirstName(), readMan.getFirstName());
         System.out.println(readMan.toString());
-
     }
 
     @Test
@@ -46,20 +52,6 @@ public class KitchenStaffRepositoryTest {
                 .build();
         System.out.println(updateMan);
         assertNotNull(kitchenStaffRepository.update(updateMan));
-        /*Manager readMan = managerRepository.read("m101");
-        assertNotNull(readMan);
-
-        Manager updateMan = new Manager.Builder().copy(readMan)
-                .setFirstName("Piedt")
-                .setLastName("Retief")
-                .build();
-
-        managerRepository.delete("m101");
-        managerRepository.create(updateMan);
-        assertNotEquals(managerRepository.read("m101").toString(), manager.toString());
-        System.out.println(managerRepository.read("m101"));
-        System.out.println(manager);*/
-
     }
 
     @Test

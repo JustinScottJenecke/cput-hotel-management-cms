@@ -1,6 +1,12 @@
 package za.ac.cput.repositoryTest.staff;
 
-import org.junit.jupiter.api.BeforeEach;
+/**
+ *     ManagerRepository.java
+ *     Test implementation class for Manager Repository
+ *     Author: Justin Scott Jenecke 215163052
+ *     Date: 25 August 2021
+ **/
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;

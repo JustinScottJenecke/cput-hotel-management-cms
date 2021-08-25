@@ -1,10 +1,16 @@
 package za.ac.cput.repositoryTest.staff;
 
+/**
+ *     FrontDeskStaffRepositoryTest.java
+ *     Test implementation class for FrontDeskStaff Repository
+ *     Author: Justin Scott Jenecke 215163052
+ *     Date: 25 August 2021
+ **/
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.staff.FrontDeskStaff;
-import za.ac.cput.entity.staff.Manager;
 import za.ac.cput.factory.staff.FrontDeskStaffFactory;
 import za.ac.cput.repository.staff.impl.FrontDeskStaffRepository;
 
@@ -38,7 +44,6 @@ public class FrontDeskStaffRepositoryTest {
         FrontDeskStaff readMan = frontDeskStaffRepository.read("fd3s");
         assertEquals(frontDeskStaff.getFirstName(), readMan.getFirstName());
         System.out.println(readMan.toString());
-
     }
 
     @Test
@@ -49,20 +54,6 @@ public class FrontDeskStaffRepositoryTest {
                 .build();
         System.out.println(updateMan);
         assertNotNull(frontDeskStaffRepository.update(updateMan));
-        /*Manager readMan = managerRepository.read("m101");
-        assertNotNull(readMan);
-
-        Manager updateMan = new Manager.Builder().copy(readMan)
-                .setFirstName("Piedt")
-                .setLastName("Retief")
-                .build();
-
-        managerRepository.delete("m101");
-        managerRepository.create(updateMan);
-        assertNotEquals(managerRepository.read("m101").toString(), manager.toString());
-        System.out.println(managerRepository.read("m101"));
-        System.out.println(manager);*/
-
     }
 
     @Test
