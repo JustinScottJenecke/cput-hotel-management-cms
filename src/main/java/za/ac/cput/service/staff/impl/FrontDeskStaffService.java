@@ -1,26 +1,41 @@
 package za.ac.cput.service.staff.impl;
 
 import za.ac.cput.entity.staff.FrontDeskStaff;
+import za.ac.cput.repository.staff.impl.FrontDeskStaffRepository;
 import za.ac.cput.service.staff.IFrontDeskStaffService;
 
 public class FrontDeskStaffService implements IFrontDeskStaffService {
+
+    private static FrontDeskStaffService service = null;
+    private FrontDeskStaffRepository repository = null;
+
+    private FrontDeskStaffService(){
+        this.repository = FrontDeskStaffRepository.getFontDeskStaffRepository();
+    }
+
+    public static FrontDeskStaffService getService() {
+        if ( service== null)
+            service = new FrontDeskStaffService();
+        return service;
+    }
+
     @Override
     public FrontDeskStaff create(FrontDeskStaff x) {
-        return null;
+        return this.repository.create(x);
     }
 
     @Override
     public FrontDeskStaff read(String ID) {
-        return null;
+        return this.repository.read(ID);
     }
 
     @Override
     public FrontDeskStaff update(FrontDeskStaff x) {
-        return null;
+        return this.repository.update(x);
     }
 
     @Override
     public boolean delete(String ID) {
-        return false;
+        return this.repository.delete(ID);
     }
 }
