@@ -1,28 +1,42 @@
 package za.ac.cput.service.staff.impl;
 
 import za.ac.cput.entity.staff.CleaningStaff;
+import za.ac.cput.repository.staff.impl.CleaningStaffRepository;
 import za.ac.cput.service.staff.ICleaningStaffService;
 
 public class CleaningStaffService implements ICleaningStaffService {
 
+    private static CleaningStaffService cleaningStaffService = null;
+    private CleaningStaffRepository cleaningStaffRepository = null;
+
+    private CleaningStaffService(){
+        this.cleaningStaffRepository = CleaningStaffRepository.getCleaningStaffRepository();
+    }
+
+    public static CleaningStaffService getService() {
+        if (cleaningStaffService == null)
+            cleaningStaffService = new CleaningStaffService();
+        return cleaningStaffService;
+    }
 
     @Override
     public CleaningStaff create(CleaningStaff x) {
-        return null;
+
+        return this.cleaningStaffRepository.create(x);
     }
 
     @Override
     public CleaningStaff read(String ID) {
-        return null;
+        return this.cleaningStaffRepository.read(ID);
     }
 
     @Override
     public CleaningStaff update(CleaningStaff x) {
-        return null;
+        return this.cleaningStaffRepository.update(x);
     }
 
     @Override
     public boolean delete(String ID) {
-        return false;
+        return this.cleaningStaffRepository.delete(ID);
     }
 }
